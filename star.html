@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Rating</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  .rating {
+    display: flex;
+    font-size: 30px;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .rating i {
+    color: lightgray;
+    transition: color 0.2s;
+  }
+  .rating i.selected,
+  .rating i.hovered {
+    color: gold;
+  }
+</style>
+</head>
+<body>
+
+<h2>Rate this product:</h2>
+<div class="rating" data-rating="0">
+  <i class="fa-regular fa-star" data-value="1"></i>
+  <i class="fa-regular fa-star" data-value="2"></i>
+  <i class="fa-regular fa-star" data-value="3"></i>
+  <i class="fa-regular fa-star" data-value="4"></i>
+  <i class="fa-regular fa-star" data-value="5"></i>
+</div>
+
+<script>
+const ratingStars = document.querySelectorAll('.rating i');
+
+ratingStars.forEach(star => {
+  star.addEventListener('mouseover', () => {
+    const val = star.getAttribute('data-value');
+    highlightStars(val);
+  });
+
+  star.addEventListener('mouseout', () => {
+    const ratingDiv = star.parentElement;
+    const currentRating = ratingDiv.getAttribute('data-rating');
+    highlightStars(currentRating);
+  });
+
+  star.addEventListener('click', () => {
+    const ratingDiv = star.parentElement;
+    ratingDiv.setAttribute('data-rating', star.getAttribute('data-value'));
+    highlightStars(star.getAttribute('data-value'));
+    alert('You rated ' + star.getAttribute('data-value') + ' stars!');
+  });
+});
+
+function highlightStars(rating) {
+  ratingStars.forEach(star => {
+    if (star.getAttribute('data-value') <= rating) {
+      star.classList.add('selected');
+    } else {
+      star.classList.remove('selected');
+    }
+  });
+}
+</script>
+
+</body>
+</html>

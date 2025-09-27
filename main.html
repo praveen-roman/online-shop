@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Shopping</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font aawesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" type="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            USD
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">EUR - Euro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">Online Store</h2>
+                </div>
+
+                <div class="col-md-4 col-12 text-end">
+                    <p class="my-md-4 header-links mb-0">
+                        <a href="#" class="px-2">Sign In</a>
+                        <a href="#" class="px-1">Create an Account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg  bg-white">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">COLLECTION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="navbar-nav">
+
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item border rounded-circle mx-2 d-flex align-items-center justify-content-center search-icon"
+                            style="width:40px; height:40px;">
+                            <a href="#" class="nav-link p-0">
+                                <i class="fa-solid fa-magnifying-glass-location"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item border rounded-circle mx-2 d-flex align-items-center justify-content-center search-icon"
+                            style="width:40px; height:40px;">
+                            <a href="#" class="nav-link p-0">
+                                <i class="fas fa-shopping-basket"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- Main Section -->
+    <main>
+        <div class="container-fluid">
+            <div id="siteSlider" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#siteSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#siteSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#siteSlider" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#siteSlider" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="pexels-notswervo-2398375.jpg" class="d-block w-100" alt="Beautiful street view">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slider2.jpg" class="d-block w-100" alt="Nature landscape">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slider3.jpg" class="d-block w-100" alt="City skyline">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slider4.jpg" class="d-block w-100" alt="Beach sunset">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="container my-5">
+                    <div class="d-flex overflow-auto gap-3">
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 1">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 2">
+                            <h1 class="text-center">Ref</h1>
+
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 3">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 4">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 5">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 6">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 7">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 8">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 9">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                        <div class="product-box">
+                            <img src="ref.jpg" class="product-img" alt="Product 10">
+                            <h1 class="text-center">Ref</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div style="border-top: 2px solid black; width: 100%; margin: 20px 0;"></div>
+
+    <!-- Fetaures Product -->
+    <div class="container">
+        <h1 class="fea  text-center">Fetaures Product</h1>
+        <p class="fea-pro">Introducing our newest featured products with exciting offers! Enjoy the latest in home
+            appliance
+            innovation—energy-saving, smart technology, and stylish designs. Limited-time discounts and special deals
+            make it the perfect opportunity to upgrade your home with top-quality appliances.</p>
+
+        <div class="container my-5">
+            <div class="d-flex overflow-auto gap-3">
+                <div class="product-box2">
+                    <img src="ref.jpg" class="product-img" alt="Product 1">
+                    <div class="container text-center">
+                        <p>Ref</p>
+                        <div class="rating" data-rating="0">
+                            <i class="fa-regular fa-star" data-value="1"></i>
+                            <i class="fa-regular fa-star" data-value="2"></i>
+                            <i class="fa-regular fa-star" data-value="3"></i>
+                            <i class="fa-regular fa-star" data-value="4"></i>
+                            <i class="fa-regular fa-star" data-value="5"></i>
+                        </div>
+                    </div>
+                    <div class="container text-center" style="text-decoration: line-through;">Before Discount : $2500
+                    </div>
+                    <div class="container text-center">After Discount : $1500</div>
+                    <div class="container text-center">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-box2">
+                    <img src="ref.jpg" class="product-img" alt="Product 1">
+                    <div class="container text-center">
+                        <p>Ref</p>
+                        <div class="rating" data-rating="0">
+                            <i class="fa-regular fa-star" data-value="1"></i>
+                            <i class="fa-regular fa-star" data-value="2"></i>
+                            <i class="fa-regular fa-star" data-value="3"></i>
+                            <i class="fa-regular fa-star" data-value="4"></i>
+                            <i class="fa-regular fa-star" data-value="5"></i>
+                        </div>
+                        <div class="container text-center" style="text-decoration: line-through;">Before Discount :
+                            $2500</div>
+                        <div class="container text-center">After Discount : $1500</div>
+                        <div class="container text-center">
+                            <button class="btn add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box2">
+                    <img src="ref.jpg" class="product-img" alt="Product 1">
+                    <div class="container text-center">
+                        <p>Ref</p>
+                        <div class="rating" data-rating="0">
+                            <i class="fa-regular fa-star" data-value="1"></i>
+                            <i class="fa-regular fa-star" data-value="2"></i>
+                            <i class="fa-regular fa-star" data-value="3"></i>
+                            <i class="fa-regular fa-star" data-value="4"></i>
+                            <i class="fa-regular fa-star" data-value="5"></i>
+                        </div>
+                        <div class="container text-center" style="text-decoration: line-through;">Before Discount :
+                            $2500</div>
+                        <div class="container text-center">After Discount : $1500</div>
+                        <div class="container text-center">
+                            <button class="btn add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box2">
+                    <img src="ref.jpg" class="product-img" alt="Product 1">
+                    <div class="container text-center">
+                        <p>Ref</p>
+                        <div class="rating" data-rating="0">
+                            <i class="fa-regular fa-star" data-value="1"></i>
+                            <i class="fa-regular fa-star" data-value="2"></i>
+                            <i class="fa-regular fa-star" data-value="3"></i>
+                            <i class="fa-regular fa-star" data-value="4"></i>
+                            <i class="fa-regular fa-star" data-value="5"></i>
+                        </div>
+                    </div>
+                    <div class="container text-center" style="text-decoration: line-through;">Before Discount : $2500
+                    </div>
+                    <div class="container text-center">After Discount : $1500</div>
+                    <div class="container text-center">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-box2">
+                    <img src="ref.jpg" class="product-img" alt="Product 1">
+                    <div class="container text-center">
+                        <p>Ref</p>
+                        <div class="rating" data-rating="0">
+                            <i class="fa-regular fa-star" data-value="1"></i>
+                            <i class="fa-regular fa-star" data-value="2"></i>
+                            <i class="fa-regular fa-star" data-value="3"></i>
+                            <i class="fa-regular fa-star" data-value="4"></i>
+                            <i class="fa-regular fa-star" data-value="5"></i>
+                        </div>
+                        <div class="container text-center" style="text-decoration: line-through;">Before Discount :
+                            $2500</div>
+                        <div class="container text-center">After Discount : $1500</div>
+                        <div class="container text-center">
+                            <button class="btn add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box2">
+                    <img src="ref.jpg" class="product-img" alt="Product 1">
+                    <div class="container text-center">
+                        <p>Ref</p>
+                        <div class="rating" data-rating="0">
+                            <i class="fa-regular fa-star" data-value="1"></i>
+                            <i class="fa-regular fa-star" data-value="2"></i>
+                            <i class="fa-regular fa-star" data-value="3"></i>
+                            <i class="fa-regular fa-star" data-value="4"></i>
+                            <i class="fa-regular fa-star" data-value="5"></i>
+                        </div>
+                        <div class="container text-center" style="text-decoration: line-through;">Before Discount :
+                            $2500</div>
+                        <div class="container text-center">After Discount : $1500</div>
+                        <div class="container text-center">
+                            <button class="btn add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box2">
+                    <img src="ref.jpg" class="product-img" alt="Product 1">
+                    <div class="container text-center">
+                        <p>Ref</p>
+                        <div class="rating" data-rating="0">
+                            <i class="fa-regular fa-star" data-value="1"></i>
+                            <i class="fa-regular fa-star" data-value="2"></i>
+                            <i class="fa-regular fa-star" data-value="3"></i>
+                            <i class="fa-regular fa-star" data-value="4"></i>
+                            <i class="fa-regular fa-star" data-value="5"></i>
+                        </div>
+                        <div class="container text-center" style="text-decoration: line-through;">Before Discount :
+                            $2500</div>
+                        <div class="container text-center">After Discount : $1500</div>
+                        <div class="container text-center">
+                            <button class="btn add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DISCOUNT LABEL -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active text-center">
+                    <div class="feedback-slide" style="background-image: url('feedback1.jpg');">
+                        <p class="feedpara">
+                            "I recently purchased this sofa, and I’m extremely satisfied with it! The design is modern
+                            and elegant, perfectly fitting into my living room. It’s very comfortable to sit on, with
+                            soft yet supportive cushions. The build quality feels sturdy and durable, and the fabric is
+                            easy to clean. Overall, this sofa has exceeded my expectations, and I highly recommend it
+                            for anyone looking to upgrade their living space."
+                            <br><strong>BY AKASH</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item text-center">
+                    <div class="feedback-slide" style="background-image: url('feedback1.jpg');">
+                        <p class="feedpara">
+                            "Absolutely love this sofa! The comfort level is unmatched and the fabric feels premium. It
+                            perfectly complements my living room decor and was very easy to set up. Highly recommend to
+                            anyone looking for a stylish and cozy addition to their home."
+                            <br><strong>BY PRIYA</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                <!-- About Section -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Online Store</h5>
+                    <p>Providing high-quality and innovative home appliances to make your life easier and comfortable.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+                    <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Shop</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Features</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">About Us</a></p>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p><i class="fas fa-home me-3"></i> 123 Street, City, Country</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@onlinestore.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +91 1234567890</p>
+                    <p><i class="fas fa-print me-3"></i> +91 0987654321</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Follow Us</h5>
+                    <a href="#" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-4"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>© 2025 Online Store. All Rights Reserved.</p>
+                </div>
+                <!-- <div class="col-md-5 col-lg-4">
+                    <p class="text-end">Designed with ❤️ by YourName</p>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+
+</html>

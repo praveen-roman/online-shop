@@ -1,0 +1,191 @@
+/* import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    --light-gray: #2b3032a1;
+    --primary-color: #45ccb8;
+    --border: #2b303218;
+    --roboto: "Roboto", sans-serif;
+    --font-heading: "Anton SC", sans-serif;
+    --font-body: "Roboto Slab", serif;
+    --text-color: #333333;
+    /* Added default text color */
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.bg-primary-color {
+    background-color: var(--primary-color) !important;
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.font-roboto {
+    font-family: var(--roboto);
+}
+
+.lightblue {
+    color: lightblue;
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+
+}
+
+header .site-title {
+    font-family: var(--font-body);
+}
+
+.container .dropdown-toggle,
+.container.dropdown-item {
+    font-size: 0.7em;
+}
+
+.header-links a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Navigation */
+.navbar-nav {
+    padding: 0.8em 0em;
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.9em;
+    color: var(--light-gray);
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0 1.3em;
+
+}
+
+.navbar-nav .basket-icon {
+    margin-right: 6.5rem !important;
+}
+
+
+/* slider */
+.carousel-item img {
+    height: 400px;
+    /* adjust to your liking */
+    object-fit: cover;
+    /* crops instead of stretching */
+}
+
+.second {
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.product-box {
+    background-color: rgb(235, 225, 225);
+    border: 2px solid black;
+    padding: 10px;
+    flex: 0 0 auto;
+    /* prevents shrinking */
+}
+
+.product-box2 {
+    /* background-color: rgb(235, 225, 225); */
+    /* border: 2px solid black; */
+    padding: 10px;
+    flex: 0 0 auto;
+    /* prevents shrinking */
+}
+
+.product-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.fea {
+    font-style: var(--font-heading);
+}
+
+.fea-pro {
+    font-style: var(--font-body);
+}
+
+
+.rating {
+    display: flex;
+    font-size: 30px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.rating i {
+    color: lightgray;
+    transition: color 0.2s;
+}
+
+.rating i.selected,
+.rating i.hovered {
+    color: gold;
+}
+
+
+
+.add-to-cart {
+    background-color: #ff6f61;
+    /* button color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    /* makes it curved */
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-to-cart:hover {
+    background-color: #ff3b2f;
+    transform: scale(1.05);
+    /* small hover effect */
+}
+
+.feedpara {
+    color: whitesmoke;
+}
+
+
+
+.feedback-slide {
+    height: 300px;
+    /* adjust height as needed */
+    background-size: cover;
+    /* ensures image covers container */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.feedpara {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent background for readability */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 700px;
+    font-size: 16px;
+}
